@@ -238,11 +238,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54234bb41aeec8c458301fa255af8ef7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &160055527 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1387107300500766, guid: 54234bb41aeec8c458301fa255af8ef7,
+    type: 2}
+  m_PrefabInternal: {fileID: 160055526}
 --- !u!4 &160055533 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4168603267487494, guid: 54234bb41aeec8c458301fa255af8ef7,
     type: 2}
   m_PrefabInternal: {fileID: 160055526}
+--- !u!114 &160055534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 160055527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 712588291}
+  damageImage: {fileID: 1973446253}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.397}
 --- !u!1001 &338151071
 Prefab:
   m_ObjectHideFlags: 0
@@ -513,6 +536,19 @@ Rigidbody:
 Transform:
   m_PrefabParentObject: {fileID: 400074, guid: be66986effd141b4992d2d78be127139, type: 3}
   m_PrefabInternal: {fileID: 82657546}
+--- !u!114 &593450077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593450068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.5
+  attackDamage: 10
 --- !u!1001 &683545309
 Prefab:
   m_ObjectHideFlags: 0
@@ -1236,6 +1272,7 @@ GameObject:
   - component: {fileID: 1973446252}
   - component: {fileID: 1973446254}
   - component: {fileID: 1973446253}
+  - component: {fileID: 1973446255}
   m_Layer: 5
   m_Name: DamageImage
   m_TagString: Untagged
@@ -1294,6 +1331,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973446251}
+--- !u!114 &1973446255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1973446251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 0}
+  damageImage: {fileID: 0}
+  deathClip: {fileID: 0}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1 &2016841265
 GameObject:
   m_ObjectHideFlags: 0
